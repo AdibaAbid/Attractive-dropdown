@@ -1,0 +1,76 @@
+    body {
+        margin: 0;
+        font-family: 'Merriweather', serif;
+    }
+    
+    header {
+        height: 100vh;
+        background-image: url(images/Betterment_VerticalsFashion.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header h1 {
+        margin: 0;
+        padding: 30px;
+        display: inline-block
+    }
+    
+    li {
+        list-style: none;
+        padding: 10px;
+        background-color: yellow;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+    
+    nav {
+        padding-top: 15px;
+        float: right;
+    }
+    
+    nav ul {
+        display: flex;
+        padding-right: 70px;
+    }
+    
+    .dropdown li,
+    .dropdown2 li {
+        display: block;
+        float: none;
+    }
+    
+    .dropdown {
+        display: block;
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        right: 332px;
+        transition-duration: 0.5s;
+        opacity: 0;
+    }
+    
+    .dropdown2 {
+        display: inline-block;
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        right: 155px;
+        transition-duration: 0.5s;
+        opacity: 0;
+    }
+    
+    ul li:hover {
+        background-color: brown;
+    }
+    
+    nav ul li:hover .dropdown2,
+    nav ul li:hover .dropdown {
+        opacity: 1;
+    }
